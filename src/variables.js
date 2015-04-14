@@ -9,6 +9,7 @@ yourNumberIs: a string that says "Your Number is `x`." where `x` is replaced by
 in input `a`
 a: the original a number
 */
+//adding a comment to test git for windows
 function variableModification(a) {
   var plus5;
   var asString;
