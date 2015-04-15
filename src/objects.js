@@ -7,10 +7,12 @@
 * It should be returned directly by the following function
 * @return {object} - the object literal
 */
+var snack = {type: "Goldfish", brand: "Pepperidge Farm", flavor: "Cheddar", count: 2000}
+
 
 function returnObjectLiteral() {
   //your code here
-  return undefined; //Modify ONLY this line
+    return this.type + " " + this.brand + " " + this.flafor + " " + this.count; //Modify ONLY this line
   //end your code
 }
 

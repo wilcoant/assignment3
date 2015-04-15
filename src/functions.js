@@ -41,6 +41,7 @@ var barType = typeof bar;
 * @property {string} message - the commit message
 */
 function GitLog(hash, date, message) {
+    "use strict";
     this.hash = hash;
     this.date = date;
     this.message = message;
