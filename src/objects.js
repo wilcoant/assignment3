@@ -40,7 +40,19 @@ function returnObjectLiteral() {
 */
 
 //your code here
-
+function MessageLog() {
+    this.user = user;
+    this.logMessage = function(){
+        this.messageText = messageText;
+        this.number = number;
+        if(number != 1 || number != 0){
+           return 'Enter 1 for received or 0 for sent';
+        }
+    this.SentMessage = Array(5);
+    
+    }
+    
+}
 //end your code
 
 /**
