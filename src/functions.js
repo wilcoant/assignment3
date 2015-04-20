@@ -13,7 +13,7 @@
 */
 
 //your code here
-
+function uselessFunction(){return null;} //return null value from useless function
 //end your code
 
 var bar = 'not a function';
@@ -30,7 +30,19 @@ var barType = typeof bar;
 */
 
 //your code here
-
+bar = function(){
+    var doubleArray = new Float64Array([1.5, 3.4]);
+    non_num = doubleArray.filter(function(x)(return x = nan;)
+    if(non_num.length > 0){
+        return false; //can't be successful if nan values were in it
+    }
+    else{
+        doubleArray.forEach(value){value = 2 * value;}
+        return true; all vals were numbers
+    }
+    
+    
+}
 //end your code
 
 /**

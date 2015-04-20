@@ -40,19 +40,43 @@ function returnObjectLiteral() {
 */
 
 //your code here
-function MessageLog() {
+function MessageLog(user) {
     this.user = user;
-    this.logMessage = function(){
-        this.messageText = messageText;
+    this.sent = 0; //sent message counter, initialize to 0 at object creation
+    this.received = 0;
+    this.ReceivedMessage = newArray(); //store received messages somewhere
+    this.SentMessage = new Array(5);  //get a new array of 5 elements to store text of sent messages in
+    this.logMessage = function(messageText, number){
         this.number = number;
-        if(number != 1 || number != 0){
-           return 'Enter 1 for received or 0 for sent';
+        if(number != 1 && number != 0){ //tell user must be 0 or 1
+        return 'Enter 1 for received or 0 for sent';}
+        if(number == 1){ //increment if 1
+            this.received++;
+            this.ReceivedMessage.unshift(messageText); //store in array and resize it
+            this.messageText = messageText; //we just need to see the last message received so each time we receive a message, keep it here and overwrite
         }
-    this.SentMessage = Array(5);
+        else if(number == 0){
+            this.sent++; //it was a sent message so increment
+            if(this.SentMessage.length < 5){
+                 this.SentMessage.unshift(messageText); //place beginning of array
+            }
+            else if(this.SentMessage.length == 5){
+                 this.SentMessage.pop(); //remove last element to prevent resizing
+                 this.SentMessage.unshift(messageText); //place at beginning and shift all messages over one spot
+            }
+            
+        }
+    }//exit messagelog
     
-    }
+    this.totalSent = function(){return this.sent;} //return running total of sent messages
+    this.totalReceived = function(){return this.received;} //return running total of received messages
+    
+        
+    
     
 }
+    
+
 //end your code
 
 /**
@@ -61,7 +85,9 @@ function MessageLog() {
 * received.
 */
 //your code here
-
+MessageLog.prototype.LastReceivedMessage = function(){
+    return this.messageText; //this will be stored here and will always be the last message received
+}
 //end your code
 
 /**
@@ -71,5 +97,9 @@ function MessageLog() {
 */
 
 //your code here
+var myLog = new MessageLog(BlackHatGuy);
+myLog.logMessage(foo, 1); //log messages to myLog as received.
+myLog.logMessage(bar, 1);
+myLog.logMessage(baz, 1);
 
 //end your code
