@@ -31,8 +31,8 @@ var barType = typeof bar;
 
 //your code here
 bar = function(){
-    var doubleArray = new Float64Array([1.5, 3.4]);
-    non_num = doubleArray.filter(function(x)(return x = nan;)
+    var doubleArray = new Float32Array([]); //typcast as 32 bit floating point number
+    non_num = doubleArray.filter(function(x){return x = nan;})
     if(non_num.length > 0){
         return false; //can't be successful if nan values were in it
     }
@@ -79,5 +79,22 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
+function parseGit(logArray){
+    
+    var size = logArray.length;
+    var i;
+    var git_log = []; //declare array for gitlogs
+    for(i = 0; i < size, i++){
+        var log = logArray[i];
+        var pos = log.length - 1; //get last position of string
+        var hash = substr(0, log.indexof(" "); //hash is everything up to the first space
+        var date_string = substr(log.indexof(" ") + 1, log.indexof(" \""); //get the substring from the space to the space followed by quotes for date
+        var d = new Date(date_string); //put datestring into date object
+        var message = substr(log.indexof(" \"") + 1, pos); //message is everyting form the " "" (+ 1 to start at quotes not space) substring to the pos var last psn in the string
+        var g = new GitLog(hash, d, message); //new GitLog message with vars including date object
+        git_log.push(g); //push to gitlot array each entry for each execution of loop
+    }
+    return git_log; //array of gitlog entries    
+}
 
 //end your code
