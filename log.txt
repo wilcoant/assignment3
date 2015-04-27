@@ -1,1 +1,48 @@
 You log goes in this  file.
+Start: Tues, 14 Apr 2015 09:45-0800
+End: Tues, 14 Apr 2015 12:00-0800
+Tasks: Read through classes and objects, started writing variable
+defs and looking into syntax.
+
+Start: Wed, 15 Apr 2015 11:45-0800
+End: Wed, 15 Apr 2015 1430:00-0800
+Tasks: Researched more on functions and syntax related to differences
+between JS and C, started writing functions
+
+Start: Thurs, 16 Apr 2015 15:45-0800
+End: Thurs, 16 Apr 2015 18:00-0800
+Tasks: Began work on Objects, primarily research on how to declare
+and scripting, started writing object functions and variables
+
+Start: Sun, 19 Apr 2015 16:45-0800
+End: Sun, 19 Apr 2015 20:45-0800
+Tasks: Completed writing all object and function...functions but didn't complete parsegit, was still having substring issues and not sure about ReGex vs substring et..
+
+Start: Mon, 20 Apr 2015 09:45-0800
+End: Mon, 20 Apr 2015 12:00-0800
+Tasks: Completed parsegit, read and watched all content for week 4 including assignment
+
+Start: Wed, 22 Apr 2015 09:45-0800
+End: Wed, 22 Apr 2015 12:00-0800
+Tasks: Started writing windows onload ajax call similar to lecture, mostly research here on how to do onclick and append list along with reading into github api
+
+Start: Tues, 24 Apr 2015 12:45-0800
+End: Tues, 24 Apr 2015 18:00-0800
+Tasks: got up to parsing Git objects, started working on storing locally, was having major syntax issues with object creation so ended up chasing bugs around for quite a while.
+
+Start: Tues, 25 Apr 2015 08:30-0800
+End: Tues, 25 Apr 2015 19:00-0800
+Tasks: Mostly troubleshooting of Ajax call, reading about Ajax and JS, then attended 2 hour tutoring session with peer tutor offered through OSU and continued writing, left able to create list, had already been able to dynamically create it with descriptions as URL, just was having issues with local storage declaration.
+
+Start: Tues, 26 Apr 2015 13:45-0800
+End: Tues, 26 Apr 2015 23:59-0800
+Tasks:Debugged and finalized part 1, worked on part 2 until time ran out, as of writing this i'm not sure where that ended.
+
+
+
+
+
+
+
+
+
