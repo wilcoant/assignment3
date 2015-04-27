@@ -12,7 +12,7 @@ var snack = {type: "Goldfish", brand: "Pepperidge Farm", flavor: "Cheddar", coun
 
 function returnObjectLiteral() {
   //your code here
-    return this.type + " " + this.brand + " " + this.flafor + " " + this.count; //Modify ONLY this line
+     return lit = {type: "Goldfish", brand: "Pepperidge Farm", flavor: "Cheddar", count: 2000}; //Modify ONLY this line
   //end your code
 }
 
@@ -70,6 +70,9 @@ function MessageLog(user) {
     
     this.totalSent = function(){return this.sent;} //return running total of sent messages
     this.totalReceived = function(){return this.received;} //return running total of received messages
+    this.getSentMessage = function(number){
+        return this.SentMessage[number];
+    }
     
         
     
@@ -85,7 +88,7 @@ function MessageLog(user) {
 * received.
 */
 //your code here
-MessageLog.prototype.LastReceivedMessage = function(){
+MessageLog.prototype.lastReceivedMessage = function(){
     return this.messageText; //this will be stored here and will always be the last message received
 }
 //end your code
