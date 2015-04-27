@@ -44,7 +44,7 @@ function MessageLog(user) {
     this.user = user;
     this.sent = 0; //sent message counter, initialize to 0 at object creation
     this.received = 0;
-    this.ReceivedMessage = newArray(); //store received messages somewhere
+    this.ReceivedMessage = new Array(); //store received messages somewhere
     this.SentMessage = new Array(5);  //get a new array of 5 elements to store text of sent messages in
     this.logMessage = function(messageText, number){
         this.number = number;
@@ -97,9 +97,10 @@ MessageLog.prototype.LastReceivedMessage = function(){
 */
 
 //your code here
-var myLog = new MessageLog(BlackHatGuy);
-myLog.logMessage(foo, 1); //log messages to myLog as received.
-myLog.logMessage(bar, 1);
-myLog.logMessage(baz, 1);
+var user = "BlackHatGuy";
+var myLog = new MessageLog(user);
+myLog.logMessage("foo", 1); //log messages to myLog as received.
+myLog.logMessage("bar", 1);
+myLog.logMessage("baz", 1);
 
 //end your code
